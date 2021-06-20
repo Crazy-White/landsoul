@@ -5,9 +5,9 @@ Brief things to operate Elements
 # examples
 
 ```javascript
-landsoul.select('p')('className', 'landsoul-class')('innerHTML', 'clear')('onclick', () => alert('?'));
-landsoul.proxy
-    .select('#id')
+landsoul(document.querySelectorAll('p'))('className', 'landsoul-class')('innerHTML', 'clear')('onclick', () => alert('?'));
+landsoul
+    .proxy(document.querySelectorAll('p'))
     .className('landsoul-class')
     .innerHTML('clear')
     .onclick(() => alert('?'));
